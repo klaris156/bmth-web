@@ -86,58 +86,7 @@
     </div>
 
 
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 11</div>
-        <img src="images/bmth gal3.jpg" style="width:100%">
-        <div class="text">Original Jinx</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 11</div>
-        <img src="images/bmth gal.jpg" style="width:100%">
-        <div class="text">Battle Cat Jinx</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 11</div>
-      <img src="images/bmth gal.jpg" style="width:100%">
-      <div class="text">Battle Cat Jinx</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 11</div>
-    <img src="images/bmth gal.jpg" style="width:100%">
-    <div class="text">Battle Cat Jinx</div>
-</div>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
+ 
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
